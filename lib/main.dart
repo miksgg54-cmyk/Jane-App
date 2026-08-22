@@ -52,7 +52,7 @@ class HomeScreen extends StatelessWidget {
               ),
               const SizedBox(height: 10),
               const Text(
-                'منصة الدردشة والتفاعل الصوتي وإنشاء الغرف الجماعية.',
+                'منصة الدردشة والتفاعل الصوتية وإنشاء الغرف الجماعية',
                 textAlign: TextAlign.center,
                 style: TextStyle(fontSize: 16, color: Colors.grey),
               ),
