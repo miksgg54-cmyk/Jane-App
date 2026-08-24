@@ -1,4 +1,4 @@
-name: Build Flutter APK
+name: Build Fresh Flutter APK
 
 on:
   push:
@@ -24,6 +24,11 @@ jobs:
       with:
         flutter-version: '3.19.x'
         channel: 'stable'
+
+    - name: Re-create Android Project Files
+      run: |
+        rm -rf android
+        flutter create . --platforms=android
 
     - name: Install dependencies
       run: flutter pub get
