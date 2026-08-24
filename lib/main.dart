@@ -6,7 +6,7 @@ void main() {
 }
 
 class JaneApp extends StatelessWidget {
-  const JaneApp({Key? key}) : super(key: key);
+  const JaneApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -14,16 +14,10 @@ class JaneApp extends StatelessWidget {
       title: 'Jane App',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.deepPurple,
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('تطبيق جين - الوكيل الذكي'),
-          centerTitle: true,
-        ),
-        body: const AIChatWidget(),
-      ),
+      home: const AIChatWidget(),
     );
   }
 }
