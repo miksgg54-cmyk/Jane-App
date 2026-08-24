@@ -1,0 +1,16 @@
+name: AI Auto Commit
+
+on:
+  issues:
+    types: [opened, edited]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Auto Response
+        run: |
+          echo "AI Agent is ready to process issues."
