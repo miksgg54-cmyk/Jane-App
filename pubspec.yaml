@@ -1,4 +1,3 @@
-
 name: jane_app
 description: "تطبيق جين للدردشة والغرف الصوتية"
 publish_to: 'none'
@@ -11,6 +10,8 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.2
+  # أضفنا مكتبة جوجل للذكاء الاصطناعي (إذا كانت الدردشة تعتمد عليها)
+  google_generative_ai: ^0.4.0 
 
 dev_dependencies:
   flutter_test:
